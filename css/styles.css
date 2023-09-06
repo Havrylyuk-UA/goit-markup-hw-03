@@ -211,7 +211,7 @@ img {
 
 /* The second section */
 
-.hidden {
+.visually-hidden {
     visibility: hidden;
 }
 
@@ -363,6 +363,7 @@ img {
 
 .span-footer {
     color: var(--shadowwhite);
+    display: inline-block;
 }
 
 .footer-desc {
