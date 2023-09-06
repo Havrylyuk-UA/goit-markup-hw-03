@@ -7,6 +7,11 @@
     --shadowwhite: #F4F4FD;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background: var(--white);
@@ -20,7 +25,7 @@ h1 {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
+    /* text-align: center; */
 }
 
 h2 {
@@ -31,7 +36,7 @@ h2 {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    text-align: center;
+    /* text-align: center; */
 }
 
 h3 {
@@ -41,7 +46,7 @@ h3 {
     font-weight: 500;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-align: center;
+    /* text-align: center; */
 }
 
 a {
@@ -53,18 +58,29 @@ ul {
     list-style: none;
 }
 
-.dfc {
+.d-flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.d-flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .container { 
-    padding-left: 0; 
-    padding-right: 0; 
+    padding-left: 15px; 
+    padding-right: 15px; 
     margin-left: auto;
     margin-right: auto; 
-    max-width: 1440px;
+    max-width: 1158px;
+}
+
+.section {
+    padding: 120px 0;
 }
 
 /* The header section */
@@ -72,6 +88,11 @@ ul {
 .header {
     flex-shrink: 0;
     flex-direction: row;
+}
+
+.header a {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .navigate {
@@ -87,6 +108,7 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    padding-right: 76px;
 }
 
 .span-header {
@@ -147,7 +169,14 @@ ul {
     background: var(--darkgrey);
 }
 
-/* .order-title {} */
+.section-order > div {
+    padding: 68px 0;
+}
+
+.order-title {
+    width: 496px;
+    padding-bottom: 48px;
+}
 
 .order-btn {
     font-family: "Roboto", sans-serif;
@@ -158,7 +187,11 @@ ul {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .order-btn:hover {
@@ -175,10 +208,19 @@ ul {
     background: var(--white);
 }
 
-/* .our-feature {} */
+.our-feature {
+    gap: 24px;
+}
+
+.feature-list {
+    align-items: flex-start;
+    gap: 8px;
+    width: calc((100% - 72px) / 4);
+}
 
 .feature-title {
     line-height: 1.2;
+    width: 264px;
 }
 
 .feature-desc {
@@ -200,13 +242,32 @@ ul {
     line-height: 1.11;
 }
 
-/* .team {} */
+.team {
+    gap: 24px;
+    padding-top: 72px;
+}
 
 .team-list {
     background: var(--white);
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    display: inline-flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
 }
 
+/* .team-img {} */
+
 /* .team-photo {} */
+
+.team-info {
+    gap: 8px;
+    padding-bottom: 32px;
+}
 
 .team-name {
     line-height: 1.2;
@@ -227,9 +288,26 @@ ul {
 
 .portfolio-title {
     line-height: 1.11;
+    padding-bottom: 72px;
 }
 
-/* .portfolio {} */
+.portfolio {
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.portfolio-list {
+    width: calc((100% - 48px) / 3);
+}
+
+/* .portfolio-img {} */
+
+.portfolio-info {
+    padding: 0px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
 
 .portfolio-product {
     line-height: 1.2;
@@ -248,6 +326,12 @@ ul {
 
 .footer {
     background: var(--darkgrey);
+    padding: 100px 0;
+}
+
+.footer > div {
+    align-items: flex-start;
+    gap: 18px;
 }
 
 .logo-footer {
@@ -272,4 +356,5 @@ ul {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
 }
