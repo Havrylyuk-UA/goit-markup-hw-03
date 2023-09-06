@@ -212,7 +212,12 @@ img {
 /* The second section */
 
 .visually-hidden {
-    visibility: hidden;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
 }
 
 .section-feature {
@@ -344,26 +349,25 @@ img {
     padding: 100px 0;
 }
 
-.footer > div {
+/* .footer > div {
     align-items: flex-start;
-}
+} */
 
 .logo-footer {
-    color: var(--blue);
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 16px;
+        color: var(--blue);
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 16px;
 }
 
 .span-footer {
     color: var(--shadowwhite);
-    display: inline-block;
 }
 
 .footer-desc {
