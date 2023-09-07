@@ -46,7 +46,7 @@ h3 {
     font-weight: 500;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-align: center;
+    /* text-align: center; */
 }
 
 a {
@@ -60,6 +60,7 @@ ul {
 
 img {
     display: block;
+    width: 100%;
 }
 
 .d-flex {
@@ -98,6 +99,10 @@ img {
 .header a {
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.header > .container { 
+    justify-content: space-between;
 }
 
 .navigate {
@@ -145,7 +150,6 @@ img {
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-left: 330px;
 }
 
 .address-contact {
@@ -175,13 +179,9 @@ img {
     padding: 188px 0;
 }
 
-.section-order > div {
-    padding: 68px 0;
-}
-
 .order-title {
     max-width: 496px;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 }
 
 .order-btn {
@@ -277,7 +277,6 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px;
 }
 
 /* .team-img {} */
